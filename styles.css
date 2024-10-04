@@ -1,4 +1,61 @@
 body {
-font-family: "Roboto", sans-serif;
-background-image: url(/images/b.jpg) ;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-image: url('/images/b.jpg');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1150px;
+   margin-left: auto;
+   margin-right: auto;
+   animation: fade-in 0.5s;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.links {
+    list-style: none;
+display: flex ;
+
+}
+
+.link-item {
+    margin-right: 25px;
+}
+
+.link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 500;
+    font-size: 14px;
+    transition:  all 0.4s;
+}
+
+.link:hover {
+    color: white;
+}
+
+.links {
+
 }
